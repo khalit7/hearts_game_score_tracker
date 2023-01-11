@@ -1,16 +1,5 @@
 # hearts_game
 
-A new Flutter project.
+A simple score tracker for the game of hearts.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The motivation behind this project came from the fact that I always win in this game but somehome people keep on telling me i dont know how to play it. So i thought lets keep track of the score :)
