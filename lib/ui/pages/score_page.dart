@@ -28,7 +28,9 @@ for (var i = 0; i < _player_eat_controller.length; i++) _player_eat_controller[i
     return Scaffold(
       appBar: AppBar(
         title: Text("Hearts Game"),
+        automaticallyImplyLeading: false,
       ),
+      
       body: Column(
         children: <Widget>[
           Padding(
