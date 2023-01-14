@@ -31,7 +31,9 @@ for (var i = 0; i < _player_eat_controller.length; i++) _player_eat_controller[i
         automaticallyImplyLeading: false,
       ),
       
-      body: Column(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child:Column(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -106,7 +108,8 @@ for (var i = 0; i < _player_eat_controller.length; i++) _player_eat_controller[i
             ),
           )
         ],
-      ),
+      )
+    ),
       floatingActionButton: _disable_next_round?Text("NOT BALANCED"):FloatingActionButton(
         onPressed: () {
               setState(() {
