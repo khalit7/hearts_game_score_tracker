@@ -35,7 +35,9 @@ for (var i = 0; i < _player_eat_controller.length; i++) _player_eat_controller[i
             padding: const EdgeInsets.all(8.0),
             child: Text("Round $currentRound"),
           ),
-          DataTable(
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child:DataTable(
             columns: <DataColumn>[
               DataColumn(label: Text("Player")),
               DataColumn(label: Text("round 0")),
@@ -60,7 +62,8 @@ for (var i = 0; i < _player_eat_controller.length; i++) _player_eat_controller[i
                 ],
               ),
             ),
-          ),
+          )
+      ),
           Text("Enter how many points did each player eat at round ${currentRound+1}", textAlign: TextAlign.center,),
           DataTable(
             columns:<DataColumn> [
