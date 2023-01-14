@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hearts_game/ui/pages/score_page.dart';
 
-import 'package:hearts_game/constants.dart';
+import 'package:hearts_game/utils/shared_variables.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var _playerNames = List.filled(4,"NULL");
-  bool disable_button = true;
+  bool _disable_button = true;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onChanged: (String value) {
                 setState(() {
                   _playerNames[index] = value;
-                  _playerNames.contains("NULL")? disable_button=true : disable_button = false;
+                  _playerNames.contains("NULL")? _disable_button=true : _disable_button = false;
                 });
               },
             ),
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: disable_button? null : () {
+        onPressed: _disable_button? null : () {
           showDialog(
             context: context,
             builder: (BuildContext context) {
